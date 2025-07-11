@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+  <title>Contador de Moedas</title>
+</head>
+<body>
+
+<script>
+function moedasTotais(pequenas, grandes) {
+
+    return (Number(pequenas) * 1) + (Number(grandes) * 5)
+}
+
+    let pequenas = prompt("Insira o número de moedas pequenas: ");
+  
+    let grandes = prompt("Insira o número de moedas grandes: ");
+
+  let total = moedasTotais(pequenas, grandes);
+
+  alert(`A pontuação total foi ${total}`);
+
+
+moedasTotais();
+</script>
+
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="style.css" />
+    <title></title>
+  </head>
+  <body>
+
+    <script>
+        const calcularChocolate = (reais, preço) => {
+            return (reais / preço).toFixed(0)
+        }
+        let reais = Number(prompt("informe quantos reais você possui"))
+        const preço = 2.50
+        let total = calcularChocolate(reais, preço)
+
+        alert(`você pode comprar ${total} chocolates!`)
+
+        calcularChocolate(reais, preço)
+    </script>
+  </body>
+</html>

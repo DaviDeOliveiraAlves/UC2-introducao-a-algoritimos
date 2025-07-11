@@ -1,0 +1,128 @@
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Estilos base (Mobile First) */
+html, body {
+  min-height: 110vh;
+  font-family: "Oswald", sans-serif;
+  background-color: blueviolet;
+  background-image: url("assets/background.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: bottom center;
+  background-attachment: scroll;
+}
+
+header,
+main {
+  display: flex;
+  justify-content: center;     /* centraliza na horizontal */
+  align-items: center;         /* centraliza na vertical */
+  height: 80%;                 /* ocupa 80% da altura da tela */
+  flex-direction: column;      /* empilha os itens verticalmente */
+  text-align: center;          /* centraliza o texto internamente */
+}
+
+footer {
+  padding: 20px;
+}
+
+.guzma1 {
+  width: 200px;
+  height: auto;
+}
+
+.guzma2 {
+  width: 300px;
+  height: auto;
+}
+
+.skull {
+  background-color: purple;
+  color: white;
+  border: none;
+  font-size: 24px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.ilustration {
+  right: -20px;
+}
+
+/* Tablet (768px a 1023px) */
+@media (min-width: 768px) and (max-width: 1023px) {
+  html, body {
+    min-height: 110vh;
+    background-size: 550px;
+    background-position: bottom center;
+  }
+
+  .ilustration {
+    right: -36rem;
+  }
+}
+
+/* Desktop (1024px ou mais) */
+@media (min-width: 1024px) {
+  html, body {
+    min-height: 100vh;
+    background-size: auto;
+    background-position: top right;
+    
+  }
+.guzma1 {
+
+    position: relative;
+    right: px;
+    width: 300px;
+    height: 300px;
+}
+.guzma2 {
+
+  position: relative;
+  right: px;
+  height: 250px
+}
+main {
+  display: flex;
+  justify-content: flex-start;     /* centraliza na horizontal */
+  align-items:flex-start;         /* centraliza na vertical */
+  height: 80%;                 /* ocupa 80% da altura da tela */
+  flex-direction: column;      /* empilha os itens verticalmente */
+  text-align: left;          /* centraliza o texto internamente */
+}
+html, body {  
+background-image: url("assets/background.svg");
+  background-repeat: no-repeat;
+  background-size: 700px;
+  background-position: bottom center;
+  background-attachment: scroll;
+}
+
+}
+/* Notificação personalizada */
+.notification {
+  display: none; /* começa invisível */
+  position: fixed;
+  top: 20px;
+  right: 100px;
+  background-color: #000000;
+  color: white;
+  padding: 25px 50px;
+  border-radius: 5px;
+  font-size: 16px;
+  z-index: 1000;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+  opacity: 0;
+  transition: opacity 0.4s ease;
+}
+
+.notification.show {
+  display: block;
+  opacity: 1;
+}
